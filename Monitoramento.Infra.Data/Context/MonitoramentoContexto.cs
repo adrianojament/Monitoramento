@@ -1,10 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Monitoramento.Domain.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Monitoramento.Domain.Entities;
+using Monitoramento.Infra.Data.Mapping;
 
 namespace Monitoramento.Infra.Data.Context
 {
@@ -13,9 +9,15 @@ namespace Monitoramento.Infra.Data.Context
 
         public MonitoramentoContexto(DbContextOptions options) : base(options)
         {
-
+            Database.Migrate();
         }
 
-        public DbSet<Servidor> Servidores { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            ConfigureMapContext.ConfigureMap(modelBuilder);
+        }
+
+        public DbSet<ServidorEntity> Servidores { get; set; }
     }
 }

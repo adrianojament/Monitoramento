@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Monitoramento.Infra.Data.Context;
 
@@ -11,9 +12,10 @@ using Monitoramento.Infra.Data.Context;
 namespace Monitoramento.Infra.Data.Migrations
 {
     [DbContext(typeof(MonitoramentoContexto))]
-    partial class MonitoramentoContextoModelSnapshot : ModelSnapshot
+    [Migration("20220130232150_Iniciando Migration")]
+    partial class IniciandoMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

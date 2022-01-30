@@ -8,11 +8,12 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
-	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1"/>
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Monitoramento.Infra.Data\Monitoramento.Infra.Data.csproj" />
+    <ProjectReference Include="..\Monitoramento.Infra.IoC\Monitoramento.Infra.IoC.csproj" />
   </ItemGroup>
 
 </Project>

@@ -11,13 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Monitoramento.InfraStructur
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Monitoramento.InfraStructure.Data", "Monitoramento.InfraStructure.Data", "{0B6CDB81-96FE-42CC-BE25-4BA5F5E9B7AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoramento.Domain", "Monitoramento.Domain\Monitoramento.Domain.csproj", "{251540A0-A5FC-47AC-8CE5-1F16234CFA10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monitoramento.Domain", "Monitoramento.Domain\Monitoramento.Domain.csproj", "{251540A0-A5FC-47AC-8CE5-1F16234CFA10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoramento.Infra.Data", "Monitoramento.Infra.Data\Monitoramento.Infra.Data.csproj", "{2AF9BB59-D904-46B9-A0C3-898E467C34FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monitoramento.Infra.Data", "Monitoramento.Infra.Data\Monitoramento.Infra.Data.csproj", "{2AF9BB59-D904-46B9-A0C3-898E467C34FB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Monitoramento.WebApi", "Monitoramento.WebApi", "{F78D5308-A594-4097-A629-6252CF7D42E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoramento.WebApi", "Monitoramento.WebApi\Monitoramento.WebApi.csproj", "{4057DCC5-3BC6-43F7-A87F-1FC34FB64928}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monitoramento.WebApi", "Monitoramento.WebApi\Monitoramento.WebApi.csproj", "{4057DCC5-3BC6-43F7-A87F-1FC34FB64928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoramento.Application", "Monitoramento.Application\Monitoramento.Application.csproj", "{72A532C7-D36E-448F-8D8C-1D759D43B2B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitoramento.Infra.IoC", "Monitoramento.Infra.IoC\Monitoramento.Infra.IoC.csproj", "{11A6436A-45F1-4AC4-B1BA-2A988F2D3F20}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +41,14 @@ Global
 		{4057DCC5-3BC6-43F7-A87F-1FC34FB64928}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4057DCC5-3BC6-43F7-A87F-1FC34FB64928}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4057DCC5-3BC6-43F7-A87F-1FC34FB64928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72A532C7-D36E-448F-8D8C-1D759D43B2B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A532C7-D36E-448F-8D8C-1D759D43B2B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72A532C7-D36E-448F-8D8C-1D759D43B2B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72A532C7-D36E-448F-8D8C-1D759D43B2B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A6436A-45F1-4AC4-B1BA-2A988F2D3F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A6436A-45F1-4AC4-B1BA-2A988F2D3F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A6436A-45F1-4AC4-B1BA-2A988F2D3F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A6436A-45F1-4AC4-B1BA-2A988F2D3F20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +57,8 @@ Global
 		{251540A0-A5FC-47AC-8CE5-1F16234CFA10} = {2F8F8685-1B69-462C-A247-220D03AFEA23}
 		{2AF9BB59-D904-46B9-A0C3-898E467C34FB} = {0B6CDB81-96FE-42CC-BE25-4BA5F5E9B7AC}
 		{4057DCC5-3BC6-43F7-A87F-1FC34FB64928} = {F78D5308-A594-4097-A629-6252CF7D42E7}
+		{72A532C7-D36E-448F-8D8C-1D759D43B2B1} = {0CEF5F62-5289-4015-9C27-1817D880A6D7}
+		{11A6436A-45F1-4AC4-B1BA-2A988F2D3F20} = {F6FBE7F8-4492-4AB8-83C5-085F6AC45EC4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {159BCC8E-366D-4071-AADF-858D63F07646}

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Monitoramento.Infra.Data.Context;
+using Monitoramento.Infra.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,7 @@ builder.Services.AddDbContext<MonitoramentoContexto>(options =>
 });
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+DependencyContainer.RegisterServices(builder.Services);
 
 var app = builder.Build();
 
