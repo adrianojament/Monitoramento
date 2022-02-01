@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Monitoramento.Application\Monitoramento.Application.csproj" />
     <ProjectReference Include="..\Monitoramento.Domain\Monitoramento.Domain.csproj" />
   </ItemGroup>
 

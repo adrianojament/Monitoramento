@@ -1,22 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Monitoramento.Domain.Entities;
-using Monitoramento.Domain.Interfaces;
+﻿using Monitoramento.Domain.Entities;
+using Monitoramento.Domain.Interfaces.Repositories;
 using Monitoramento.Infra.Data.Context;
 
 namespace Monitoramento.Infra.Data.Repositories
 {
-    public class ServidorRepository : IServidorRepository
+    public class ServidorRepository : PadraoRepository<ServidorEntity>, IServidorRepository
     {
-        private MonitoramentoContexto _context;
-
-        public ServidorRepository(MonitoramentoContexto context)
+        public ServidorRepository(MonitoramentoContexto context) : base(context)
         {
-            _context = context;
-        }
-
-        public async Task<IEnumerable<ServidorEntity>> Recuperar()
-        {
-            return await _context.Servidores.ToListAsync();
+            _dataset = context.Set<ServidorEntity>();
         }
     }
 }

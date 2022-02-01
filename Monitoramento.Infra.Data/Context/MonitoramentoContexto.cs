@@ -19,5 +19,6 @@ namespace Monitoramento.Infra.Data.Context
         }
 
         public DbSet<ServidorEntity> Servidores { get; set; }
+        public DbSet<VideoEntity> Videos { get; set; }
     }
 }

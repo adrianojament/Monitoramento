@@ -1,6 +1,6 @@
-﻿namespace Monitoramento.Domain.Helpers
+﻿namespace Monitoramento.Application
 {
-    public abstract class Helpers
+    public abstract class Utils
     {
         public static DateTime GetDateTimeBrasilian()
         {

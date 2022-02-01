@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Monitoramento.Application.Interfaces;
-using Monitoramento.Application.ViewModel;
-using Monitoramento.Domain.Interfaces;
+using Monitoramento.Domain.Interfaces.Repositories;
+using Monitoramento.Domain.Interfaces.Services;
 using Monitoramento.Domain.Models;
+using Monitoramento.Domain.ViewModel;
 
 namespace Monitoramento.Application.Services
 {
@@ -21,8 +21,28 @@ namespace Monitoramento.Application.Services
         {
             return new ServidorViewModel()
             {
-                Servidores = _mapper.Map<IEnumerable<Servidor>>(await _repository.Recuperar()),
+                Servidores = _mapper.Map<IEnumerable<Servidor>>(await _repository.SelectAsync()),
             };
+        }
+
+        public Task<ServidorViewModel> Recuperar(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ServidorViewModel> Adicionar(Servidor viewModel)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ServidorViewModel> Atualizar(Servidor viewModel)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> Remover(Guid id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

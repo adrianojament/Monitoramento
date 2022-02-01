@@ -14,10 +14,6 @@ namespace Monitoramento.Domain.Entities
         {
             get
             {
-                if (_AtualizadoEm == null)
-                {
-                    _AtualizadoEm = Helpers.Helpers.GetDateTimeBrasilian();
-                }
                 return _AtualizadoEm;
             }
             set => _AtualizadoEm = value;
@@ -26,10 +22,6 @@ namespace Monitoramento.Domain.Entities
         {
             get
             {
-                if (_CriadoEm == null)
-                {
-                    _CriadoEm = Helpers.Helpers.GetDateTimeBrasilian();
-                }
                 return _CriadoEm;
             }
             set => _CriadoEm = value;

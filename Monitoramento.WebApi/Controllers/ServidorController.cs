@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Monitoramento.Application.Interfaces;
+using Monitoramento.Domain.Interfaces.Services;
 
 namespace Monitoramento.WebApi.Controllers
 {
